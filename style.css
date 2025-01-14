@@ -1,12 +1,32 @@
-.top{
-    background-color: #282b30;
-
-}
-.header{
-    color: #99aab5;
-    font-size: 50px;
-}
 body{
     background-color: 	#1e2124;
     font-family: Roboto;
+    color: white;
+    margin: 0px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #282b30;
+    padding: 20px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #36393e;
+}
+main{
+    margin: 20px;
 }
