@@ -28,7 +28,6 @@ body{
 main{
 }
 .logo{
-    font-size: 50px;
     font-family: 'Graffiti font', Roboto;
 }
 #startplaying a{
@@ -38,8 +37,3 @@ main{
     font-weight: bold;
     padding: 25px;
     text-decoration: none;
-}
-#startplaying{
-    margin-left: 50%;
-    margin-top: 20%;
-}
