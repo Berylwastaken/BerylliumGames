@@ -18,6 +18,7 @@
   position: relative;
   transition: all 0.3s;
   width: 220px;
+  text-align: center;
   }
 
 .button-40::after {
