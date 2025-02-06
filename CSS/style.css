@@ -7,7 +7,6 @@ body{
 .navdiv{
     list-style-type: none;
     background-color: #282b30;
-    padding: 20px;
     margin: 0px;
     display: flex;
     align-items: center;
