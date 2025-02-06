@@ -34,5 +34,7 @@ main{
     font-family: 'Graffiti font', Roboto;
 }
 #startplaying{
-    margin: 25%;
+    text-decoration: none;
+    margin-left: 50%;
+    margin-top: 20%;
 }
