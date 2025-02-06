@@ -33,6 +33,11 @@ main{
 }
 #startplaying a{
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+    text-decoration: none;
 }
 #startplaying{
     margin-left: 50%;
