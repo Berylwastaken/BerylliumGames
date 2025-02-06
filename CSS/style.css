@@ -4,15 +4,14 @@ body{
     color: white;
     margin: 0px;
 }
-.navbar ul{
+.navdiv{
     list-style-type: none;
     background-color: #282b30;
     padding: 20px;
     margin: 0px;
-    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .navbar li{
     display: inline-block;
@@ -23,6 +22,9 @@ body{
     font-weight: bold;
     padding: 25px;
     text-decoration: none;
+}
+.navbar ul a:hover{
+    color: #323991;
 }
 main{
     margin: 20px;
