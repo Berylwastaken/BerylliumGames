@@ -33,6 +33,8 @@ main{
 }
 #startplaying{
     text-decoration: none;
+}
+#startplayingbtn{
     margin-left: 50%;
     margin-top: 20%;
 }
