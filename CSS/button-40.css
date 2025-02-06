@@ -17,7 +17,7 @@
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
-  width: 420px;
+  width: 220px;
   }
 
 .button-40::after {
