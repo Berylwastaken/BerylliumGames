@@ -40,4 +40,6 @@ main{
 .startplaying{
     margin-left: 50%;
     margin-top: 20%;
+    justify-content: center;
+    align-content: center;
 }
