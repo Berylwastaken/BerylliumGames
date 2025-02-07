@@ -31,13 +31,13 @@ main{
 .logo{
     font-family: 'Graffiti font', Roboto;
 }
-#startplaying a{
+.startplaying a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
-#startplaying{
+.startplaying{
     margin-left: 50%;
     margin-top: 20%;
 }
