@@ -35,6 +35,8 @@ main{
     color: white;
     font-size: 20px;
     font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 #startplaying{
     margin-left: 50%;
