@@ -37,11 +37,10 @@ main{
     font-size: 20px;
     font-weight: bold;
     padding: 25px;
+    justify-content: center;
+    align-content: center;
 }
 .startplaying{
     margin-left: 50%;
     margin-top: 20%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
