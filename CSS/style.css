@@ -3,6 +3,7 @@ body{
     font-family: Roboto;
     color: white;
     margin: 0px;
+    overflow: hidden;
 }
 .navdiv{
     list-style-type: none;
