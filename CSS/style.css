@@ -27,7 +27,7 @@ body {
     text-decoration: none;
 }
 .logo {
-    font-family: 'Graffiti font', Roboto;
+    font-family: 'Graffiti font';
 }
 
 .startplaying {
@@ -45,5 +45,5 @@ body {
     color: white;
     font-size: 20px;
     font-weight: bold;
-    padding: 25px;
+    padding: 10 25px;
 }
