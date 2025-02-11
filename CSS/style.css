@@ -1,11 +1,15 @@
-body{
-    background-color: 	#1e2124;
+Here is the CSS without comments:
+
+```css
+body {
+    background-color: #1e2124;
     font-family: Roboto;
     color: white;
     margin: 0px;
     overflow: hidden;
 }
-.navdiv{
+
+.navdiv {
     list-style-type: none;
     background-color: #282b30;
     margin: 0px;
@@ -13,31 +17,41 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.navbar li{
+
+.navbar li {
     display: inline-block;
 }
-.navbar a{
+
+.navbar a {
     color: white;
     font-size: 20px;
     font-weight: bold;
     padding: 25px;
     text-decoration: none;
 }
-.navbar ul a:hover{
+
+.navbar ul a:hover {
     color: #323991;
 }
-main{
-}
-.logo{
+
+.logo {
     font-family: 'Graffiti font', Roboto;
 }
-.startplaying a{
+
+.startplaying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.startplaying a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
-.startplaying{
-    margin-left: 50%;
-    margin-top: 20%;
-}
+```
