@@ -4,10 +4,6 @@ body {
     color: white;
     margin: 0px;
     overflow: hidden;
-    background-image: url('Images/1.gif');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
 }
 
 .navdiv {
