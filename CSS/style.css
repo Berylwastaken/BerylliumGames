@@ -28,7 +28,7 @@ body {
     padding: 25px;
     text-decoration: none;
 }
-.navbar a: hover {
+.navbar a:hover {
     color: #9d00ff;
 }
 ul a {
