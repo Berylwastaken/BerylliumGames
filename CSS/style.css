@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     padding: 15px;
 }
-.navtext {
+.navtext:hover {
     color: #b069db;
 }
 .navbar li {
