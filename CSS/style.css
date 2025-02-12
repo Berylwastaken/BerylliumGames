@@ -31,6 +31,11 @@ body {
 ul a {
     font-size: 30px;
 }
+ul a:hover {
+    font-size:88px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
 .logo {
     font-size: 30px;
 }
