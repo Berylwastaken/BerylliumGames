@@ -23,12 +23,13 @@ body {
 
 .navbar a {
     color: white;
-    font-size: 20px;
     font-weight: bold;
     padding: 25px;
     text-decoration: none;
 }
-
+ul a {
+    font-size: 20px;
+}
 .logo {
     font-family:'sedgwick-ave-display';
     font-size: 50px;
