@@ -62,4 +62,6 @@ ul a {
     font-family: Roboto;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    text-align: center;
 }
