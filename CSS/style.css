@@ -57,6 +57,8 @@ ul a {
     border-radius: 5px;
     height: 150px;
     width: 120px;
+}
+.game a {
     font-family: Roboto;
     color: white;
     text-decoration: none;
