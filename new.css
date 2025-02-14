@@ -1,5 +1,7 @@
 body {
-  background-color: #121212;
+  background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientBackground 20s ease infinite;
   color: #ffffff;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,8 +12,41 @@ body {
   height: 100vh;
 }
 
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .container {
   text-align: center;
+}
+
+h1 {
+  position: relative;
+  font-size: 4em;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle at center, rgba(0,150,255,0.6), transparent 70%);
+  filter: blur(20px);
+  z-index: -1;
+  animation: crystalWave 6s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@keyframes crystalWave {
+  0% { transform: scale(1) rotate(0deg); opacity: 0.7; }
+  50% { transform: scale(1.1) rotate(15deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 0.7; }
 }
 
 .button-group {
@@ -24,8 +59,8 @@ body {
   display: inline-block;
   border: none;
   color: #fff;
-  padding: 15px 30px;
-  font-size: 18px;
+  padding: 20px 50px;
+  font-size: 24px;
   cursor: pointer;
   margin: 10px;
   border-radius: 10px;
@@ -38,15 +73,9 @@ body {
 }
 
 @keyframes swirl {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .btn:hover {
@@ -67,14 +96,7 @@ body {
 }
 
 @keyframes glitter {
-  0% {
-    transform: translate(0, 0) rotate(45deg);
-  }
-  50% {
-    transform: translate(10px, 10px) rotate(45deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(45deg);
-  }
+  0% { transform: translate(0, 0) rotate(45deg); }
+  50% { transform: translate(10px, 10px) rotate(45deg); }
+  100% { transform: translate(0, 0) rotate(45deg); }
 }
-
