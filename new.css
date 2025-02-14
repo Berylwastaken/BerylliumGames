@@ -17,13 +17,13 @@ body {
 
 .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background: linear-gradient(135deg, #00ffff, #ff00ff);
   margin: 0 auto 20px;
   transform: rotate(45deg);
@@ -55,13 +55,13 @@ h1 {
   font-size: 4em;
   margin: 0 0 20px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .button-group {
   margin-top: 20px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .btn {
@@ -70,8 +70,8 @@ h1 {
   display: inline-block;
   border: none;
   color: #fff;
-  padding: 20px 50px;
-  font-size: 24px;
+  padding: 30px 70px;
+  font-size: 28px;
   cursor: pointer;
   margin: 10px;
   border-radius: 10px;
@@ -119,12 +119,30 @@ h1 {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 .shape {
   position: absolute;
-  background: rgba(0, 200, 255, 0.2);
+  background: rgba(0, 200, 255, 0.15);
   border-radius: 15px;
   transition: transform 0.3s ease;
+}
+
+.shape.circle {
+  border-radius: 50%;
+}
+
+.shape.triangle {
+  background: none;
+  width: 0;
+  height: 0;
+}
+
+.shape.square {
+  border-radius: 0;
+}
+
+.shape.rounded {
+  border-radius: 25px;
 }
