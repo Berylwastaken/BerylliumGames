@@ -1,18 +1,9 @@
 body {
-    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
-    background-size: 400% 400%;
-    animation: gradientBackground 20s ease infinite;
     background-color: #1e2124;
     font-family: Roboto;
     color: white;
     margin: 0px;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 a {
     text-decoration: none;
