@@ -17,8 +17,12 @@ body {
 
 .container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .logo {
@@ -26,9 +30,8 @@ body {
   height: 120px;
   background: linear-gradient(135deg, #00ffff, #ff00ff);
   margin: 0 auto 20px;
-  transform: rotate(45deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   position: relative;
-  border-radius: 15px;
 }
 
 .logo::after {
@@ -40,7 +43,7 @@ body {
   bottom: -10px;
   background: linear-gradient(135deg, rgba(0,255,255,0.5), rgba(255,0,255,0.5));
   filter: blur(10px);
-  border-radius: 15px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: -1;
   animation: crystalGlow 4s ease-in-out infinite;
 }
@@ -55,13 +58,13 @@ h1 {
   font-size: 4em;
   margin: 0 0 20px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .button-group {
   margin-top: 20px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .btn {
@@ -124,7 +127,7 @@ h1 {
 
 .shape {
   position: absolute;
-  background: rgba(0, 200, 255, 0.15);
+  background: rgba(0,200,255,0.15);
   border-radius: 15px;
   transition: transform 0.3s ease;
 }
@@ -145,4 +148,8 @@ h1 {
 
 .shape.rounded {
   border-radius: 25px;
+}
+
+.shape.diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
