@@ -17,7 +17,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Container for background shapes */
+/* Background shapes container */
 .bg-shapes {
   position: absolute;
   top: 0;
@@ -28,7 +28,7 @@ body {
   z-index: 1;
 }
 
-/* Main content container (logo, header, buttons) near the top and centered */
+/* Main content container */
 .container {
   position: relative;
   z-index: 2;
@@ -75,6 +75,7 @@ h1 {
   margin: 0 0 20px;
   position: relative;
   z-index: 2;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 /* Button group and buttons */
@@ -98,8 +99,8 @@ h1 {
   background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
   background-size: 200% 200%;
   animation: swirl 4s ease infinite;
-  box-shadow: 0 0 15px rgba(255, 0, 255, 0.7),
-              0 0 15px rgba(0, 255, 255, 0.7);
+  box-shadow: 0 0 15px rgba(255,0,255,0.7),
+              0 0 15px rgba(0,255,255,0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
@@ -112,8 +113,8 @@ h1 {
 
 .btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(255, 0, 255, 1),
-              0 0 25px rgba(0, 255, 255, 1);
+  box-shadow: 0 0 25px rgba(255,0,255,1),
+              0 0 25px rgba(0,255,255,1);
 }
 
 .btn::after {
@@ -138,10 +139,10 @@ h1 {
 .shape {
   position: absolute;
   background: rgba(0,200,255,0.15);
-  border-radius: 15px;
   transition: transform 0.3s ease;
 }
 
+/* Specific shape styles */
 .shape.circle { border-radius: 50%; }
 .shape.triangle { background: none; width: 0; height: 0; }
 .shape.square { border-radius: 0; }
