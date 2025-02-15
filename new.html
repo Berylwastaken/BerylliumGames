@@ -17,11 +17,12 @@
     </div>
   </div>
   <script>
-    // Generate 30 random shapes spread across the screen (avoiding the top ~30%)
     document.addEventListener('DOMContentLoaded', function() {
       const bgShapes = document.querySelector('.bg-shapes');
+      const container = document.querySelector('.container');
+      const containerRect = container.getBoundingClientRect();
       const shapeTypes = ["circle", "square", "triangle", "rectangle", "rounded", "diamond"];
-      const numShapes = 30;
+      const numShapes = 50;
       for (let i = 0; i < numShapes; i++) {
         const shape = document.createElement('div');
         const type = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
@@ -30,12 +31,10 @@
         // Random size between 30px and 100px
         const size = Math.floor(Math.random() * 70) + 30;
         if (type === "rectangle") {
-          // For rectangles, make width a bit wider than height
           const width = size + Math.floor(Math.random() * 50);
           shape.style.width = width + "px";
           shape.style.height = size + "px";
         } else if (type === "triangle") {
-          // For triangles, set borders to create a triangle shape
           const width = size;
           shape.style.borderLeft = (width / 2) + "px solid transparent";
           shape.style.borderRight = (width / 2) + "px solid transparent";
@@ -47,17 +46,32 @@
           shape.style.height = size + "px";
         }
         
-        // Random position: top between 30% and 95%, left between 0% and 100%
-        const topPercent = Math.random() * 65 + 30;
-        const leftPercent = Math.random() * 100;
+        // Generate a random position across the whole screen,
+        // re-generating if the position falls within the container.
+        let validPosition = false;
+        let topPercent, leftPercent;
+        while (!validPosition) {
+          topPercent = Math.random() * 100;
+          leftPercent = Math.random() * 100;
+          const topPx = window.innerHeight * (topPercent / 100);
+          const leftPx = window.innerWidth * (leftPercent / 100);
+          if (
+            topPx < containerRect.top ||
+            topPx > containerRect.bottom ||
+            leftPx < containerRect.left ||
+            leftPx > containerRect.right
+          ) {
+            validPosition = true;
+          }
+        }
         shape.style.top = topPercent + "%";
         shape.style.left = leftPercent + "%";
         
         bgShapes.appendChild(shape);
       }
     });
-    
-    // Parallax effect on shapes and background movement
+
+    // Parallax effect for shapes and background
     document.addEventListener('mousemove', function(e) {
       const x = e.clientX / window.innerWidth;
       const y = e.clientY / window.innerHeight;
