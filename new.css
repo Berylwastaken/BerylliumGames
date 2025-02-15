@@ -1,4 +1,4 @@
-/* Body setup with a moving gradient background */
+/* Background gradient with animated movement */
 body {
   position: relative;
   margin: 0;
@@ -17,7 +17,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Shapes container in the background */
+/* Background shapes container */
 .bg-shapes {
   position: absolute;
   top: 0;
@@ -28,7 +28,7 @@ body {
   z-index: 1;
 }
 
-/* Main content container, centered horizontally with a top margin */
+/* Main content container (logo, header, buttons) positioned near the top and centered */
 .container {
   position: relative;
   z-index: 2;
@@ -39,7 +39,7 @@ body {
   max-width: 800px;
 }
 
-/* Gemstone-style logo (a diamond shape) */
+/* Gemstone-style diamond logo */
 .logo {
   width: 120px;
   height: 120px;
