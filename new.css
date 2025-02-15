@@ -1,8 +1,5 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  position: relative;
   background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
   background-size: 400% 400%;
   animation: gradientBackground 20s ease infinite;
@@ -12,22 +9,19 @@ body {
   padding: 0;
   overflow: hidden;
 }
-
 @keyframes gradientBackground {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 .container {
-  position: relative;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px 40px;
-  border-radius: 10px;
 }
-
 .logo {
   width: 120px;
   height: 120px;
@@ -36,7 +30,6 @@ body {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   position: relative;
 }
-
 .logo::after {
   content: "";
   position: absolute;
@@ -50,26 +43,22 @@ body {
   z-index: -1;
   animation: crystalGlow 4s ease-in-out infinite;
 }
-
 @keyframes crystalGlow {
   0% { opacity: 0.7; }
   50% { opacity: 1; }
   100% { opacity: 0.7; }
 }
-
 h1 {
   font-size: 4em;
   margin: 0 0 20px;
   position: relative;
   z-index: 3;
 }
-
 .button-group {
   margin-top: 20px;
   position: relative;
   z-index: 3;
 }
-
 .btn {
   position: relative;
   text-decoration: none;
@@ -88,18 +77,15 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
-
 @keyframes swirl {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(255, 0, 255, 1), 0 0 25px rgba(0, 255, 255, 1);
 }
-
 .btn::after {
   content: "";
   position: absolute;
@@ -111,13 +97,11 @@ h1 {
   animation: glitter 2s linear infinite;
   opacity: 0.2;
 }
-
 @keyframes glitter {
   0% { transform: translate(0, 0) rotate(45deg); }
   50% { transform: translate(10px, 10px) rotate(45deg); }
   100% { transform: translate(0, 0) rotate(45deg); }
 }
-
 .bg-shapes {
   position: absolute;
   top: 0;
@@ -127,14 +111,12 @@ h1 {
   pointer-events: none;
   z-index: 1;
 }
-
 .shape {
   position: absolute;
   background: rgba(0,200,255,0.15);
   border-radius: 15px;
   transition: transform 0.3s ease;
 }
-
 .shape.circle { border-radius: 50%; }
 .shape.triangle { background: none; width: 0; height: 0; }
 .shape.square { border-radius: 0; }
