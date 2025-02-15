@@ -4,33 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="new.css">
-  <title>Beryllium</title>
+  <title>Beryllium Homepage</title>
 </head>
 <body>
   <div class="bg-shapes">
-    <div class="shape circle" style="width: 80px; height: 80px; top: 35%; left: 10%;"></div>
-    <div class="shape square" style="width: 100px; height: 100px; top: 40%; left: 70%;"></div>
-    <div class="shape triangle" style="border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid rgba(0,200,255,0.15); top: 45%; left: 30%;"></div>
-    <div class="shape rectangle" style="width: 120px; height: 60px; top: 50%; left: 5%;"></div>
-    <div class="shape rounded" style="width: 90px; height: 90px; top: 55%; left: 80%;"></div>
-    <div class="shape circle" style="width: 60px; height: 60px; top: 60%; left: 40%;"></div>
-    <div class="shape square" style="width: 50px; height: 50px; top: 65%; left: 85%;"></div>
-    <div class="shape rectangle" style="width: 140px; height: 70px; top: 70%; left: 50%;"></div>
-    <div class="shape rounded" style="width: 110px; height: 110px; top: 75%; left: 15%;"></div>
-    <div class="shape square" style="width: 70px; height: 70px; top: 80%; left: 60%;"></div>
-    <div class="shape circle" style="width: 90px; height: 90px; top: 85%; left: 50%;"></div>
-    <div class="shape rectangle" style="width: 160px; height: 80px; top: 90%; left: 25%;"></div>
-    <div class="shape diamond" style="width: 80px; height: 80px; top: 35%; left: 80%;"></div>
-    <div class="shape diamond" style="width: 100px; height: 100px; top: 40%; left: 30%;"></div>
-    <div class="shape diamond" style="width: 50px; height: 50px; top: 45%; left: 60%;"></div>
-    <div class="shape diamond" style="width: 70px; height: 70px; top: 50%; left: 90%;"></div>
-    <div class="shape triangle" style="border-left: 40px solid transparent; border-right: 40px solid transparent; border-bottom: 80px solid rgba(0,200,255,0.15); top: 55%; left: 10%;"></div>
-    <div class="shape rounded" style="width: 130px; height: 80px; top: 60%; left: 15%;"></div>
-    <div class="shape diamond" style="width: 90px; height: 90px; top: 65%; left: 40%;"></div>
-    <div class="shape square" style="width: 60px; height: 60px; top: 70%; left: 75%;"></div>
-    <div class="shape circle" style="width: 70px; height: 70px; top: 75%; left: 5%;"></div>
-    <div class="shape rectangle" style="width: 100px; height: 50px; top: 80%; left: 20%;"></div>
-    <div class="shape rounded" style="width: 120px; height: 70px; top: 85%; left: 65%;"></div>
+    <!-- Shapes are placed lower on the page so they don't overlap the header/buttons -->
+    <div class="shape circle" style="width: 80px; height: 80px; top: 30%; left: 10%;"></div>
+    <div class="shape square" style="width: 100px; height: 100px; top: 35%; left: 70%;"></div>
+    <div class="shape triangle" style="border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid rgba(0,200,255,0.15); top: 40%; left: 30%;"></div>
+    <div class="shape rectangle" style="width: 120px; height: 60px; top: 45%; left: 5%;"></div>
+    <div class="shape rounded" style="width: 90px; height: 90px; top: 50%; left: 80%;"></div>
+    <div class="shape circle" style="width: 60px; height: 60px; top: 55%; left: 40%;"></div>
+    <div class="shape square" style="width: 50px; height: 50px; top: 60%; left: 85%;"></div>
+    <div class="shape rectangle" style="width: 140px; height: 70px; top: 65%; left: 50%;"></div>
+    <div class="shape rounded" style="width: 110px; height: 110px; top: 70%; left: 15%;"></div>
+    <div class="shape square" style="width: 70px; height: 70px; top: 75%; left: 60%;"></div>
+    <div class="shape circle" style="width: 90px; height: 90px; top: 80%; left: 50%;"></div>
+    <div class="shape rectangle" style="width: 160px; height: 80px; top: 85%; left: 25%;"></div>
+    <div class="shape diamond" style="width: 80px; height: 80px; top: 90%; left: 80%;"></div>
+    <div class="shape diamond" style="width: 100px; height: 100px; top: 92%; left: 30%;"></div>
+    <div class="shape diamond" style="width: 50px; height: 50px; top: 88%; left: 50%;"></div>
+    <div class="shape diamond" style="width: 70px; height: 70px; top: 94%; left: 90%;"></div>
+    <div class="shape triangle" style="border-left: 40px solid transparent; border-right: 40px solid transparent; border-bottom: 80px solid rgba(0,200,255,0.15); top: 82%; left: 10%;"></div>
+    <div class="shape rounded" style="width: 130px; height: 80px; top: 87%; left: 15%;"></div>
+    <div class="shape diamond" style="width: 90px; height: 90px; top: 90%; left: 40%;"></div>
+    <div class="shape square" style="width: 60px; height: 60px; top: 93%; left: 75%;"></div>
+    <div class="shape circle" style="width: 70px; height: 70px; top: 89%; left: 5%;"></div>
+    <div class="shape rectangle" style="width: 100px; height: 50px; top: 91%; left: 20%;"></div>
+    <div class="shape rounded" style="width: 120px; height: 70px; top: 95%; left: 65%;"></div>
   </div>
   <div class="container">
     <div class="logo"></div>
@@ -41,6 +42,7 @@
     </div>
   </div>
   <script>
+    // Mousemove event to add a subtle parallax to the shapes and background
     document.addEventListener('mousemove', function(e) {
       const x = e.clientX / window.innerWidth;
       const y = e.clientY / window.innerHeight;
