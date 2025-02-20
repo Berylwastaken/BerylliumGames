@@ -34,19 +34,17 @@ body {
 
 /* Header container */
 .header {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 20px;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  z-index: 2;
 }
 
 /* Header style */
 h1 {
   font-size: 5em; /* Make the text bigger */
   margin: 0;
-  position: relative;
-  z-index: 2;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
