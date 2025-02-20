@@ -93,7 +93,8 @@ h1 {
   display: inline-block;
   border: none;
   color: #fff;
-  padding: 35px 55px;
+  font-weight: bold;
+  padding: 30px 60px;
   font-size: 14px;
   cursor: pointer;
   margin: 10px;
