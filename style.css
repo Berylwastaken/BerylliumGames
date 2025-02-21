@@ -39,8 +39,6 @@ body {
   text-align: center;
   width: 100%;
   z-index: 2;
-  color: white;
-  text-decoration: none;
 }
 
 /* Header style */
@@ -143,3 +141,8 @@ h1 {
 .shape.square { border-radius: 0; }
 .shape.rounded { border-radius: 25px; }
 .shape.diamond { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+
+#header{
+  color: white;
+  text-decoration: none;
+}
