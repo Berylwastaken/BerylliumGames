@@ -146,3 +146,7 @@ h1 {
   color: white;
   text-decoration: none;
 }
+.project-grid {
+  width: 200px;
+  height: 200px;
+}
